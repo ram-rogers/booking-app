@@ -1,0 +1,121 @@
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.seat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.seat-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease;
+
+  &.selected {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instruction {
+  background-color: #b8b2b2;
+  display: flex;
+  width: 25%;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.instruction-container {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+span {
+  margin-right: 15px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  &:hover:enabled {
+    background-color: #0056b3;
+  }
+}
+
+.booked {
+  background-color: #ccc;
+  color: #999;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}
+
+.movie-select-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#movieSelect {
+  padding: 5px;
+  font-size: 16px;
+}
+
+#movieSelect option {
+  background-color: #fff;
+  color: #333;
+  font-weight: normal;
+}
+
+#movieSelect option:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.blue {
+  background-color: #007bff;
+}
+
+.grey {
+  background-color: #cccccc;
+}
+
+.white {
+  background-color: #f4f4f4;
+}
